@@ -9,7 +9,11 @@ pipeline{
             steps{
 
                 script{
-                    git branch: 'main', url: 'https://github.com/rhn424/project1.git'
+
+                    gitCheckout(
+                        branch: "main"
+                        url: "https://github.com/rhn424/project1.git"
+                    )
                 }
             }
         }
