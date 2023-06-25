@@ -13,7 +13,7 @@ pipeline{
                 script{
 
                     gitCheckout(
-                        branch: "main"
+                        branch: "main",
                         url: "https://github.com/rhn424/project1.git"
                     )
                 }
